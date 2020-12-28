@@ -1,12 +1,13 @@
 import React, {useState, useEffect} from 'react'
+import './CardFigure.css'
 
 //this should be an svg, not a png.
-import figurePlaceholder from '../../assets/cardFigurePlaceholder/Placeholder.png'
+import figurePlaceholder from '../../assets/cardFigurePlaceholder/noImagePlaceholder.svg'
 
 export const CardFigure = (props) => {
 
     const {image} = props
-    
+
     const [rentalImage, setRentalImage] = useState(figurePlaceholder)
 
     const initialStateBuilder = () => {
@@ -19,6 +20,6 @@ export const CardFigure = (props) => {
     }, []);
 
     return (
-        <img src={rentalImage} alt="" />
+        <img className="cardFigureImg" src={rentalImage} alt="" />
     )
 }

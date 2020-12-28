@@ -1,40 +1,49 @@
 .rentalCardContainer {
-    height: 280px;
-    width: 218px;
-    border: 1px solid black;
+    background-color: white;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.05);
+
+
+    height: 278px;
+    width: 13.625em;
+    
     border-radius: 5px;
     margin: 40px;
+    box-sizing: border-box;
+    /* border: 0px solid #333333; */
+    transition: box-shadow 0.6s;
 }
 
+.rentalCardContainer:hover {
+    /* border: 1px solid #333333; */
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+
+
 .cardStatusContainer {
-    position: relative;
-    top: 8px;
-    left: 11px;
+    position: absolute;
+    display: flex;
+    padding: 0.5em;
+    margin: 0em;
 }
 
 
 .cardImageContainer {
-    height: 50%;
+    
+    height: 49%;
     width: 100%;
-    position: relative;
-    top: 0;
-    left: 0;
-    padding: 0;
-    margin: 0;
-
-    border-radius: inherit;
-    object-fit: cover;
-
 }
 
 .cardDescriptionAndActionContainer {
-    height: 50%;
-    width: 100%;
-    position: relative;
-    bottom: 0;
-    left: 0;
-
-    background-color: white;
-    border-radius: inherit;
+    display: grid;
+    gap: 1em;
+    
+    padding: 1em 1em 1em 1em;
 }
+
+/* .cardDescriptionContainer {
+
+} */
+
 

@@ -20,4 +20,9 @@ p {
 
 button {
   height: 40px;
+  cursor: pointer;
+}
+
+figure {
+  margin: 0;
 }

@@ -1,0 +1,21 @@
+.cardActionButton {
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    border: 0;
+    border-radius: 5px;
+}
+
+
+.cardActionBooked {
+    color: #11A960;
+    font-size: 14px;
+    line-height: 40px;
+
+    display: flex;
+}
+
+.cardActionBooked img {
+    margin-right: 8px;
+}
+

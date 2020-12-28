@@ -28,7 +28,7 @@ export  const CardStatus = (props) => {
       }, []);
 
     return (
-        <div className="cardStatusContainer" style={{backgroundColor: backgroundColor}}>
+        <div className="cardStatusMainContainer" style={{backgroundColor: backgroundColor}}>
             <p>{status}</p>
         </div>
     )

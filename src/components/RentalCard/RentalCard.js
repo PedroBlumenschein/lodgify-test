@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import {CardStatus} from '../RentalStatus/CardStatus'
+import {CardStatus} from '../CardStatus/CardStatus'
 import {CardFigure} from '../CardFigure/CardFigure'
 import {CardDescription} from '../CardDescription/CardDescription'
 import {CardAction} from '../CardAction/CardAction'
@@ -16,11 +16,13 @@ export const RentalCard = (props) => {
             <div className="cardStatusContainer">
                 <CardStatus booked={booked} bookable={bookable}/>
             </div>
-            <div className="cardImageContainer">
+            <figure className="cardImageContainer">
                 <CardFigure image={image}/>
-            </div>
+            </figure>
             <div className="cardDescriptionAndActionContainer">
-                <CardDescription id={id} name={name}/>
+                <div className="cardDescriptionContainer">
+                    <CardDescription id={id} name={name}/>
+                </div>
                 <CardAction booked={booked} bookable={bookable}/>
             </div>
         </div>
