@@ -2,9 +2,9 @@
 
 This project is the execution of the "Lodgify Frontend Technical Test". 
 
-To see this project deployed in production, click here.
+To see this project deployed in production, [click here](https://5fea2faa7726a40142939195--determined-einstein-842eac.netlify.app/). 
 
-This project is a react app, created with create-react-app. 
+This project was deployed to production with [Netlify](https://www.netlify.com/) and was created with create-react-app. 
 
 
 # Components hierarchy
