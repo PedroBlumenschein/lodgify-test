@@ -9,13 +9,13 @@ This project is a react app, created with create-react-app.
 
 ## Components hierarchy
 
-`App` 
------>`RentalsListPage` 
--------------------->`RentalCard`
------------------------------->`CardStatus`
------------------------------->`CardFigure`
------------------------------->`CardCardDescription`
------------------------------->`CardAction`
+`App`   
+----->`RentalsListPage`   
+-------------------->`RentalCard`  
+------------------------------>`CardStatus`  
+------------------------------>`CardFigure`  
+------------------------------>`CardCardDescription`  
+------------------------------>`CardAction`  
 
 `RentalsListPage` gets the data from the provided endpoint and uses the response to set its own state (`rentalsList`). 
 
