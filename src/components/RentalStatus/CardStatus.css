@@ -1,0 +1,12 @@
+.cardStatusContainer {
+    display: inline-block;
+    border-radius: 30px;
+}
+
+.cardStatusContainer > p {
+    margin: 0;
+    padding: 3px 10px 3px 10px;
+
+    color: white;
+    font-weight: 700;
+}

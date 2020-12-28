@@ -1,0 +1,8 @@
+.rentalsListPageContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #F0F0EC;
+}
