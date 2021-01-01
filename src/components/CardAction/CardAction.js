@@ -9,17 +9,30 @@ export const CardAction = (props) => {
     const [actionName, setActionName] = useState('')
     const [actionBackgroundColor, setActionBackgroundColor] = useState('')
 
+    const componentConstants = {
+        backgroundColor: {
+            notBookable: '#B2B2B2',
+            book: '#2C64B7'
+        },
+        content: {
+            booked: `booked` ,
+            notBookable: 'Not bookable',
+            book: 'Book'
+        }
+    }
+
+
     const initialStateBuilder = () => {
         if (booked > 0) {
-            setActionName('booked')
+            setActionName(componentConstants.content.booked)
         } 
         else if (bookable === false) {
-            setActionName('Not bookable');
-            setActionBackgroundColor('#B2B2B2')
+            setActionName(componentConstants.content.notBookable);
+            setActionBackgroundColor(componentConstants.backgroundColor.notBookable)
         }
         else {
-            setActionName('Book');
-            setActionBackgroundColor('#2C64B7')
+            setActionName(componentConstants.content.book);
+            setActionBackgroundColor(componentConstants.backgroundColor.book)
         }
     }
 

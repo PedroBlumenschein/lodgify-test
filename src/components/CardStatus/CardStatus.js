@@ -6,20 +6,33 @@ export  const CardStatus = (props) => {
     const {booked, bookable} = props
 
     const [status, setStatus] = useState('')
-    const [backgroundColor, setBackgroundColor] = useState('')
+    const [statusBackgroundColor, setStatusBackgroundColor] = useState('')
+
+    const componentConstants = {
+        backgroundColor: {
+            booked: '#2C64B7',
+            unavailable: '#E02323',
+            available: '#11A960'
+        },
+        content: {
+            booked: 'Booked',
+            unavailable: 'unavailable',
+            available: 'available'
+        }
+    }
 
     const initialStateBuilder = () => {
         if (booked > 0) {
-            setStatus('booked')
-            setBackgroundColor('#2C64B7')
+            setStatus(componentConstants.content.booked)
+            setStatusBackgroundColor(componentConstants.backgroundColor.booked)
         } 
         else if (bookable === false) {
-            setStatus('unavailable')
-            setBackgroundColor('#E02323')
+            setStatus(componentConstants.content.unavailable)
+            setStatusBackgroundColor(componentConstants.backgroundColor.unavailable)
         }
         else {
-            setStatus('available')
-            setBackgroundColor('#11A960')
+            setStatus(componentConstants.content.available)
+            setStatusBackgroundColor(componentConstants.backgroundColor.available)
         }
     }
 
@@ -28,7 +41,7 @@ export  const CardStatus = (props) => {
       }, []);
 
     return (
-        <div className="cardStatusMainContainer" style={{backgroundColor: backgroundColor}}>
+        <div className="cardStatusMainContainer" style={{backgroundColor: statusBackgroundColor}}>
             <p>{status}</p>
         </div>
     )

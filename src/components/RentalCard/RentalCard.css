@@ -19,15 +19,12 @@
     cursor: pointer;
 }
 
-
-
 .cardStatusContainer {
     position: absolute;
     display: flex;
     padding: 0.5em;
     margin: 0em;
 }
-
 
 .cardImageContainer {
     
@@ -36,10 +33,16 @@
 }
 
 .cardDescriptionAndActionContainer {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1em;
+    height: 40%;
+
+    /* display: grid;
     gap: 1em;
     
-    padding: 1em 1em 1em 1em;
+    padding: 1.8em 1em 1em 1em; */
 }
 
 /* .cardDescriptionContainer {
