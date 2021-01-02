@@ -42,11 +42,8 @@ From the `RentalCard`, the relevant `props` data is then passed to each individu
 
 
 # Caveats & open topics
-
-- Inner card gradient shadow is not being applied
-- card border is not being applied 
-- Flexbox was used to position the cards. Could grid have been better?  
-
+- Inner card gradient shadow is not being applied.
+- card border is not being applied. 
 
 ### If you've got this far, thank you for reviewing this project. I'm eager to hear what you think. When sharing your feedback, Please separate it in: 
 1. Overall code structure (components structure and hierarchy, state management, files organization, etc.);

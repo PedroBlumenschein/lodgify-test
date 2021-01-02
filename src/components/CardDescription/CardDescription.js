@@ -20,7 +20,7 @@ export const CardDescription = (props) => {
     return (
         <div>
             <p className="rentalId">Id: {rentalId}</p>
-            <p className="rentalName">{rentalName}</p>
+            <p className="rentalName">{rentalName.length > 40 ? rentalName.slice(0,40) + '...' : rentalName}</p>
         </div>
     )
 }
