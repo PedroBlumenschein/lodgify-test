@@ -15,7 +15,7 @@ export  const CardStatus = (props) => {
             available: '#11A960'
         },
         content: {
-            booked: 'Booked',
+            booked: 'booked',
             unavailable: 'unavailable',
             available: 'available'
         }
