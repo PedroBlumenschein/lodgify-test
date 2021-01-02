@@ -15,7 +15,7 @@ export const CardAction = (props) => {
             book: '#2C64B7'
         },
         content: {
-            booked: `booked` ,
+            booked: 'booked' ,
             notBookable: 'Not bookable',
             book: 'Book'
         }
